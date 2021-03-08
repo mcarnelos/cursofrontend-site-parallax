@@ -5,15 +5,15 @@
 		<meta charset="utf-8">
 
 		<style type="text/css">
-
+			
+			/*Formatação padrão*/
 			body, html {
 				margin: 0;
 				font: 16px "Lato", sans-serif;
 				color: #777;
-				height: 100%;
-				border: 1px solid red; 
+				height: 100%; 
 			}
-		
+					
 			.conteudo {
 				color: #777;
 				background: white;
@@ -27,22 +27,109 @@
 				text-align: center;
 			}
 
+			p {
+				margin-bottom: 20px;
+			}
+
+			/*Efeito Parallax*/
+			.caixa1, .caixa2, .caixa3, .caixa4{
+				position: relative;
+				border: 1px solid red;
+				height: 100%;
+				opacity: 0.7; /*define a opacidade da imagem*/
+				background-repeat: no-repeat;
+				background-size: cover; /*cobre o espaço em branco alongando a imagem*/
+				background-position: center;
+				background-attachment: fixed;/*mantem a imagem fixa causando o efeito parallax*/
+			}
+
+			.caixa1 {
+				background-image: url(imagens/imagem1.jpg);
+			}
+
+			.caixa2 {
+				background-image: url(imagens/imagem2.jpg);
+			}
+
+			.caixa3 {
+				background-image: url(imagens/imagem3.jpg);
+			}
+
+			.caixa4 {
+				background-image: url(imagens/imagem4.jpg);
+			}
+
+			.conteudo-titulo {
+				position: absolute;
+				left: 0;
+				top: 45%;
+				width: 100%;
+				text-align: center;
+			}
+
+			.conteudo-titulo span.titulo {
+				color: #fff;
+				background-color: #111;
+				padding: 18px;
+				font-size: 25px;
+				letter-spacing: 5px; /*define espassamento entre os textos*/
+			}
+
+			.titulo {
+				text-transform: uppercase;
+			}
+
 		</style>
 
 	</head>
 	<body>
 
-		<div>
-			Conteudo 1
+		<div class="caixa1">
+			<div class="conteudo-titulo">
+				<span class="titulo">PASSEIO DE BALÕES </span>
+			</div>
 		</div>
 
-		<div>
+		<div class="conteudo">
 			<h3>Parallax</h3>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+
 		</div>
 
-		<div>
-			Conteudo 3
+		<div class="caixa2">
+			<div class="conteudo-titulo">
+				<span class="titulo">pegando a estrada</span>
+			</div>
+		</div>
+
+		<div class="conteudo">
+			<h3>Parallax</h3>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+
+		</div>
+
+		<div class="caixa3">
+			<div class="conteudo-titulo">
+				<span class="titulo">Pôr do sol </span>
+			</div>
+		</div>
+
+		<div class="conteudo">
+			<h3>Parallax</h3>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+
+		</div>
+
+		<div class="caixa4">
+			<div class="conteudo-titulo">
+				<span class="titulo">montanhas</span>
+			</div>
 		</div>
 
 	</body>
